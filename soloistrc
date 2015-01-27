@@ -37,22 +37,15 @@ recipes:
 - sprout-osx-settings::dock_preferences
 - sprout-osx-settings::finder_display_full_path
 
-- sprout-chruby
 - sprout-ssh::known_hosts_github
 
 - smuc-workstation::homedir
 - smuc-workstation::font_inconsolata-g
 - smuc-workstation::remove_bash_it
 - smuc-workstation::desktop
-- smuc-workstation::vimgolf
 
 node_attributes:
   sprout:
-    chruby:
-      default_ruby: 2.1.4
-      rubies:
-        ruby:
-          - 2.1.4
     dock_preferences:
       orientation: left
       auto_hide:   true
@@ -60,31 +53,15 @@ node_attributes:
     homebrew:
       formulae:
         - ack
-        - awscli
         - go
-        - graphviz
-        - imagemagick
-        - mp3blaster
-        - p7zip
-        - postgresql
         - pstree
-        - python
         - tree
       casks:
         - 1password
-        - google-chrome
+        - boot2docker
         - dropbox
         - evernote
-        - firefox
-        - gog-downloader
-        - heroku-toolbelt
-        - java
-        - libreoffice
-        - selfcontrol
         - skype
-        - tunnelbear
-        - utorrent
         - vagrant
         - virtualbox
-        - vlc
 
