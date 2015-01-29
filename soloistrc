@@ -38,6 +38,7 @@ recipes:
 - sprout-osx-settings::finder_display_full_path
 
 - sprout-ssh::known_hosts_github
+- sprout-git::projects
 
 - smuc-workstation::homedir
 - smuc-workstation::font_inconsolata-g
@@ -50,6 +51,17 @@ node_attributes:
       orientation: left
       auto_hide:   true
       clear_apps:  true
+    git:
+      projects:
+        -
+          name: dev-s-cloud-net
+          url: git@github.com:soundcloud/dev-s-cloud-net.git
+          workspace_path: ~/code
+        -
+          name: plumber
+          url: git@github.com:soundcloud/plumber.git
+          workspace_path: ~/code/go-projects/src/github.com/soundcloud
+
     homebrew:
       formulae:
         - ack
@@ -61,6 +73,8 @@ node_attributes:
         - boot2docker
         - dropbox
         - evernote
+        - firefox
+        - google-chrome
         - skype
         - vagrant
         - virtualbox
