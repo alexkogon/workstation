@@ -61,6 +61,14 @@ node_attributes:
           name: plumber
           url: git@github.com:soundcloud/plumber.git
           workspace_path: ~/code/go-projects/src/github.com/soundcloud
+        -
+          name: pipeline-generator
+          url: git@github.com:soundcloud/pipeline-generator.git
+          workspace_path: ~/code
+        -
+          name: runtime-stacks
+          url: git@github.com:soundcloud/runtime-stacks.git
+          workspace_path: ~/code
 
     homebrew:
       formulae:
@@ -76,6 +84,7 @@ node_attributes:
         - firefox
         - google-chrome
         - skype
+        - slack
         - vagrant
         - virtualbox
 
