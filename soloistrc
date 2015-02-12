@@ -69,12 +69,15 @@ node_attributes:
           name: runtime-stacks
           url: git@github.com:soundcloud/runtime-stacks.git
           workspace_path: ~/code
+        -
+          name: serverspec-docker
+          url: git@github.com:soundcloud/serverspec-docker.git
+          workspace_path: ~/code
 
     homebrew:
       formulae:
         - ack
         - go
-        - pstree
         - tree
       casks:
         - 1password
